@@ -1,13 +1,20 @@
+import "../pages/index.css";
+import {Api} from "./Api.js";
+import {CardList} from "./CardList";
+import {FormValidation} from "./FormValidation";
+import {PopupForm} from "./PopupForm";
+import {PopupImg} from "./PopupImg";
+import {UserInfo} from "./UserInfo";
+import {Card} from "./Card";
 (function () {
-
+	const isDev = process.env.NODE_ENV === 'development';
 	const config = {
-		url: 'https://praktikum.tk/cohort11/',
+		url: isDev?'http://praktikum.tk/cohort11/':'https://praktikum.tk/cohort11/',
 		headers: {
 			'Content-Type': 'application/json',
 			authorization: 'a2fd7302-7b4b-499b-93f5-25da135b9008'
 		}
 	}
-
 	const root = document.querySelector('.root');
 
 	const openPopupNewPlaceButton = root.querySelector('.user-info__button');
