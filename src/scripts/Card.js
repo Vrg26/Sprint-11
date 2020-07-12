@@ -1,5 +1,5 @@
-class Card {
-	static templateCard = document.querySelector('#mainCard');
+export class Card {
+	static templateCard =  document.querySelector('#mainCard');
 
 	constructor(objCard, openCard, api) {
 		this.likes = objCard.likes;

@@ -1,3 +1,11 @@
+import "../pages/index.css";
+import {Api} from "./Api.js";
+import {CardList} from "./CardList";
+import {FormValidation} from "./FormValidation";
+import {PopupForm} from "./PopupForm";
+import {PopupImg} from "./PopupImg";
+import {UserInfo} from "./UserInfo";
+import {Card} from "./Card";
 (function () {
 
 	const config = {
